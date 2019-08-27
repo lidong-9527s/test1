@@ -1,6 +1,14 @@
 spring:
   application:
-    name: item-service
+    name: item-server
+  
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lidong-9527s/
+          search-paths: 
+          - sp02-itemservice 
     
 #server:
 #  port: 8001
